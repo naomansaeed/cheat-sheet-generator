@@ -7,7 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Cheat Sheet Generator</h1>
+        <input type="text" id="sheet-title" placeholder="Enter sheet title (e.g., Git Commands)">
+    </header>
+    <main>
+        <!-- Form to add new card -->
+        <form id="add-card-form">
+            <input type="text" id="term" placeholder="Term / Prompt" required>
+            <textarea name="explanation" id="definition" placeholder="Definition / Explanation" required></textarea>
+            <button type="submit">Add Card</button>
+        </form> 
+
+        <!-- Container for cards -->
+        <div id="cards-container"></div> 
+    </main>
+
+    <footer>
+        <button id="print-btn">Save as PDF (Print)</button>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
