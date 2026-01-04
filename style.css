@@ -147,6 +147,8 @@ footer {
 .card {
     background-color: var(--bg-surface);
     border-left: 4px solid var(--primary-color);
+    margin-bottom: 8px;
+    padding-left:5px;
 }
 
 .btn-primary {

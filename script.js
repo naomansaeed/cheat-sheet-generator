@@ -23,10 +23,15 @@ function createCard() {
                 <h2>${newTerm}</h2>
                 <p>${newDef}</p> 
                 ` */
-    container.appendChild(newCard);    
+    container.appendChild(newCard);   
+    //saveToLocalStorage(newTerm.innerText, newDef.innerText); 
     //console.log(container);
     //container.innerHTML += newEntry;
     //newCard.innerHTML = "";
     termInput.value = "";
     definition.value= "";
+}
+
+function saveToLocalStorage(key, value){
+    localStorage.setItem(key,value);
 }
