@@ -10,14 +10,23 @@ addCardForm.addEventListener('submit', function(event){
 });
 
 function createCard() {
-    let newTerm = termInput.value
-    let newDef = definition.value 
-    let newEntry = "";
-    newEntry += `<h2>${newTerm}</h2>
+    let newTerm = document.createElement("h2");
+    newTerm.innerText = termInput.value;
+    //console.log(newTerm);
+    let newDef = document.createElement("p") 
+    newDef.innerText = definition.value
+    let newCard = document.createElement("div")
+    newCard.setAttribute('class', 'card');
+    newCard.appendChild(newTerm);
+    newCard.appendChild(newDef);
+    /*newCard += `
+                <h2>${newTerm}</h2>
                 <p>${newDef}</p> 
-                `
-    container.innerHTML += newEntry;
-    newEntry = "";
+                ` */
+    container.appendChild(newCard);    
+    //console.log(container);
+    //container.innerHTML += newEntry;
+    //newCard.innerHTML = "";
     termInput.value = "";
     definition.value= "";
 }
