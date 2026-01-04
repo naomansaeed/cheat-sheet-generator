@@ -1,0 +1,27 @@
+:root {
+    /* Setting the color pallet*/
+    /* Background and Surface*/
+    --bg-main: #00FFFF;          /* aqua —  primary background */
+    --bg-surface: #E0FFFF;       /* Lighter aqua/turquoise for cards or panels (slightly desaturated for contrast) */
+
+    /* Text Colors */
+    --text-main: #2F4F4F;        /* darkslategray — primary text */
+    --text-inverse: #FFFFFF;     /* True white — for text on dark accents or high-contrast areas */
+
+    /* Primary accent (used for interactive elements) */
+    --primary-color: #5F9EA0;    /* CadetBlue */
+    --primary-light: #8FBDDC;    /* Lightened CadetBlue (for hover/focus states) */
+    --primary-dark: #3A6F72;     /* Darkened CadetBlue (for active/pressed states) */
+
+    /* Secondary accent (optional for highlights, borders, etc.) */
+    --secondary-color: #48D1CC;   /* MediumTurquoise */
+    --secondary-light: #7AE5DA;   /* Lighter turquoise */
+    --secondary-dark: #2C9C9E;    /* Darker turquoise */
+
+    /* Nuetral / Extra */
+    --neutral-light: #FDFBD4;     /* Cream — great for callouts, notes, or light accents */
+}
+body {
+   background-color: var(--bg-main);
+   color: var(--text-main);
+}
